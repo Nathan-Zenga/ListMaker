@@ -15,6 +15,7 @@ public class Lister {
         self.items = []
     }
     
+    // adds item to list
     public func add(item: String) {
         self.items.append(item)
     }
