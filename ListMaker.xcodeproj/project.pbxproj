@@ -10,6 +10,8 @@
 		DE1D01401FB0B39C00323320 /* ListMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1D01361FB0B39C00323320 /* ListMaker.framework */; };
 		DE1D01451FB0B39C00323320 /* ListMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1D01441FB0B39C00323320 /* ListMakerTests.swift */; };
 		DE1D01471FB0B39C00323320 /* ListMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1D01391FB0B39C00323320 /* ListMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1D01511FB0B3C500323320 /* Lister.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1D01501FB0B3C500323320 /* Lister.swift */; };
+		DE1D01521FB0B43300323320 /* Lister.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1D01501FB0B3C500323320 /* Lister.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		DE1D013F1FB0B39C00323320 /* ListMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1D01441FB0B39C00323320 /* ListMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMakerTests.swift; sourceTree = "<group>"; };
 		DE1D01461FB0B39C00323320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1D01501FB0B3C500323320 /* Lister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lister.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 			children = (
 				DE1D01391FB0B39C00323320 /* ListMaker.h */,
 				DE1D013A1FB0B39C00323320 /* Info.plist */,
+				DE1D01501FB0B3C500323320 /* Lister.swift */,
 			);
 			path = ListMaker;
 			sourceTree = "<group>";
@@ -148,6 +152,7 @@
 				TargetAttributes = {
 					DE1D01351FB0B39C00323320 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					DE1D013E1FB0B39C00323320 = {
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE1D01511FB0B3C500323320 /* Lister.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE1D01521FB0B43300323320 /* Lister.swift in Sources */,
 				DE1D01451FB0B39C00323320 /* ListMakerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +341,7 @@
 		DE1D014B1FB0B39C00323320 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengaman.ListMaker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +363,7 @@
 		DE1D014C1FB0B39C00323320 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +384,7 @@
 		DE1D014E1FB0B39C00323320 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ListMakerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +398,7 @@
 		DE1D014F1FB0B39C00323320 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ListMakerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
